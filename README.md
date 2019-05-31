@@ -1,9 +1,13 @@
 #PASSOS INSTALACAO SERVIDORES DE CRIPTO MOEDAS
 
 #Author: Gustavo Clemente
+
 #gfdac.dev@gmail.com
+
 #Início Desenvolvimento: 01/fev/2018
+
 #Revisado em:            31/maio/2019
+
 
 #Servidores atualmente suportados
 #BITCOIN - BTC
@@ -18,8 +22,12 @@
 #DEMAIS MOEDAS EM IMPLEMENTAÇÃO.
 
 #Instalacao dos Scripts
+
 #---------------------------------------------------------------------------------------------------
+
+
 #Usuario ubuntu
+
 #Path /home/ubuntu
 
 #Usar os seguintes comandos para instalacao dos scripts:
