@@ -7,13 +7,13 @@
 
 #Instalacao dos Scripts
 #---------------------------------------------------------------------------------------------------
-#Baixar e descompactar os scripts: https://core.14bit.com/scripts_coin.zip
+#Baixar e descompactar os scripts: https://core.exchange.com/scripts_coin.zip
 #Deixar o caminho dos scripts no padrao $HOME/scripts_coin/
 
 #Usar os seguintes comandos para instalacao dos scripts:
 cd $HOME
 sudo apt install -y unzip curl wget git
-wget https://core.14bit.com/scripts_coin-master.zip
+wget https://core.exchange.com/scripts_coin-master.zip
 unzip -u scripts_coin-master.zip
 
 #Execute o arquivo install.sh e selecione a opção que desejar:
@@ -58,7 +58,7 @@ cd scripts_coin
 #INICIAR SERVIDOR (SHELL CRON START)
 
 
-#7 - Instalacao da EXCHANGE (Exchange Clone 14Bit)
+#7 - Instalacao da EXCHANGE (Exchange Clone exchange)
 #Instalacao do BD EXCHANGE
 #Edicao Links e URLS
 #Edicao DB CONF
@@ -69,4 +69,4 @@ cd scripts_coin
 #---------------------------------------------------------------------------------------------------
 #Endereço desta documentação:
 #https://privatebin.net/?37dd75e784c42c5f#4PenLMPDGVnK8dmgP3/gDnmv1n4L2pnYippJL71S8TA=
-#senha: 14bit14
+#senha: exchange14

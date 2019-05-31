@@ -15,7 +15,7 @@ function checkServers() {
 
 	echo "Dogecoin server status: "
 
-	echo "Winco server status: "
+	echo "wfs server status: "
 
 	echo "Bitcoin2x server status: "
 
@@ -262,8 +262,8 @@ function ethereum() {
 	esac
 }
 
-function winco() {
-	echo "Winco"
+function wfs() {
+	echo "wfs"
 
 	echo "1 - Balance:"
 	echo "2 - BlockChain Info:"
@@ -302,7 +302,7 @@ function inicia() {
 	echo "2: Ethereum - ETH"
 	echo "3: Bitcoin Cash - BCH"
 	# echo "7 - Dogecoin - DOGE";
-	echo "4: Winco - WCO"
+	echo "4: wfs - wfs"
 	# echo "9 - Bitcoin2x - B2X";
 	echo "0: Sair"
 
@@ -329,7 +329,7 @@ function inicia() {
 		bitcoincash
 		;;
 
-	[4] | "wco")
+	[4] | "wfs")
 		zcash
 		;;
 

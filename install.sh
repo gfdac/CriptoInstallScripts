@@ -31,7 +31,7 @@ function welcome() {
 	menu3_04="INSTALAR BITCOIN-CASH"
 	menu3_05="INSTALAR API PHP CRIPTO MOEDA"
 	menu3_06="INSTALAR CRONTAB"
-	menu3_07="INSTALAR EXCHANGE CLONEN 14BIT"
+	menu3_07="INSTALAR EXCHANGE CLONEN exchange"
 	menu3_08="INSTALAR TODOS"
 
 	aviso_instalado="Sucesso. Reinicie o servidor ubuntu para as cripto moedas comecarem a funcionar."
@@ -50,7 +50,7 @@ function welcome() {
 
 	echo ""
 	echo "********************************"
-	echo "Instalaçao e Manutenção CORE EPV"
+	echo "Instalaçao e Manutenção CORE wfs"
 	echo "********************************"
 
 	echo ""

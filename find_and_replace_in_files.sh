@@ -11,11 +11,11 @@
 startdirectory="/var/www/html/exchange"
 #vem por parametro a origem
 searchterm=$1
-#searchterm="https://core.14bit.com/14bitPHP/"
-#searchterm="https://14bit.com/exchange/"
+#searchterm="https://core.exchange.com/exchangePHP/"
+#searchterm="https://exchange.com/exchange/"
 #vem por parametro o destino
 replaceterm=$2
-#replaceterm="https://IP/14bitPHP/"
+#replaceterm="https://IP/exchangePHP/"
 # **********************************************************
 
 echo "***************************************************"

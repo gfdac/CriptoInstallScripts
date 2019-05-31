@@ -10,10 +10,10 @@ echo
 echo "Instalando Exchange"
 
 cd $HOME
-curl https://core.14bit.com/14bit-master.zip -O
-unzip -u -o 14bit-master.zip
+curl https://core.exchange.com/exchange-master.zip -O
+unzip -u -o exchange-master.zip
 sudo rm -rf /var/www/html/exchange
-sudo mv 14bit-master /var/www/html/exchange
+sudo mv exchange-master /var/www/html/exchange
 cd /var/www/html/exchange
 sudo composer install
 sudo composer update
@@ -23,16 +23,16 @@ sudo chmod 777 /var/www/html/exchange/runtime
 
 #Edicao Links e URLS (REMOVIDO DEVIDO ALTERACAO AGORA EXCHANGE BUSCA DIRETO NO SEU BD AS URLS)
 # echo ""
-# read -p "Substituir endereço de chamada da API Exchange atual https://14bit.com/exchange/ por: " n1
-# sudo "$DIR/find_and_replace_in_files.sh" "https://14bit.com/exchange/" "$n1"
+# read -p "Substituir endereço de chamada da API Exchange atual https://exchange.com/exchange/ por: " n1
+# sudo "$DIR/find_and_replace_in_files.sh" "https://exchange.com/exchange/" "$n1"
 
 # echo ""
-# read -p "Substituir endereço de chamada da API CORE atual https://core.14bit.com/14bitPHP/ por: " n2
-# sudo "$DIR/find_and_replace_in_files.sh" "https://core.14bit.com/14bitPHP/" "$n2"
+# read -p "Substituir endereço de chamada da API CORE atual https://core.exchange.com/exchangePHP/ por: " n2
+# sudo "$DIR/find_and_replace_in_files.sh" "https://core.exchange.com/exchangePHP/" "$n2"
 
 #Instalacao do BD EXCHANGE
 cd $HOME
-curl https://core.14bit.com/exchange.sql -O
+curl https://core.exchange.com/exchange.sql -O
 
 mysql -u root -p -e "create database exchange"
 
