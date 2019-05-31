@@ -3,21 +3,34 @@
 #Author: Gustavo Clemente
 #gfdac.dev@gmail.com
 #Início Desenvolvimento: 01/fev/2018
-#Revisado em:            10/jul/2018
+#Revisado em:            31/maio/2019
+
+
+#Servidores atualmente suportados
+#BITCOIN - BTC
+#BITCOIN CASH - BCH
+#BITCOIN CASH SV - BSV
+#LITECOIN - LTC
+#ZCASH - ZCASH
+#DOGECOIN - DOGE
+#DASHCOIN - DASH
+#ETHEREUM - ETH (COM TOKENS ERC-20)
+
+#DEMAIS MOEDAS EM IMPLEMENTAÇÃO.
+
 
 #Instalacao dos Scripts
 #---------------------------------------------------------------------------------------------------
-#Baixar e descompactar os scripts: https://core.exchange.com/scripts_coin.zip
-#Deixar o caminho dos scripts no padrao $HOME/scripts_coin/
+#Baixar e descompactar os scripts: https://core.exchange.com/CriptoInstallScripts.zip
+#Deixar o caminho dos scripts no padrao $HOME/CriptoInstallScripts/
 
 #Usar os seguintes comandos para instalacao dos scripts:
 cd $HOME
 sudo apt install -y unzip curl wget git
-wget https://core.exchange.com/scripts_coin-master.zip
-unzip -u scripts_coin-master.zip
+sudo git clone https://github.com/pandabr/CriptoInstallScripts.git
 
 #Execute o arquivo install.sh e selecione a opção que desejar:
-cd scripts_coin
+cd CriptoInstallScripts
 ./install.sh 
 #Opcao 2 Instalar
 #Opcao 9 Todos

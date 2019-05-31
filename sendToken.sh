@@ -19,7 +19,7 @@ printf 'Enviando para a carteira %s o montante %s da moeda %s pela coinbase %s \
 
 
 geth attach http://localhost:8545 << EOF
-loadScript("/home/ubuntu/scripts_coin/geth/token.js")
+loadScript("/home/ubuntu/CriptoInstallScripts/geth/token.js")
 
 #COINBASE DO TOKEN
 var fromAccount = '$5';
