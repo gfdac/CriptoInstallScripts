@@ -54,23 +54,6 @@ crontab -r
 (crontab -l 2>/dev/null; echo "@reboot java -jar /home/ubuntu/iota/target/iri-1.5.3.jar -p 14265  -c /home/ubuntu/.iota/iota.ini") | crontab -
 (crontab -l 2>/dev/null; echo "") | crontab -
 
-(crontab -l 2>/dev/null; echo "#DEPOSITOS NA EXCHANGE") | crontab -
-(crontab -l 2>/dev/null; echo "*/10 * * * * $HOME/CriptoInstallScripts/depositos.sh") | crontab -
-(crontab -l 2>/dev/null; echo "") | crontab -
-
-(crontab -l 2>/dev/null; echo "#DEPOSITOS ANTIGOS NA EXCHANGE") | crontab -
-(crontab -l 2>/dev/null; echo "*/50 * * * * $HOME/CriptoInstallScripts/depositos-antigos.sh") | crontab -
-(crontab -l 2>/dev/null; echo "") | crontab -
-
-(crontab -l 2>/dev/null; echo "#ATUALIZA VALORES BTC E USD DAS MOEDAS DIGITAIS BASE COINMARKETCAP") | crontab -
-(crontab -l 2>/dev/null; echo "*/3  * * * * $HOME/CriptoInstallScripts/dadosmoeda.sh") | crontab -
-(crontab -l 2>/dev/null; echo "") | crontab -
-
 (crontab -l 2>/dev/null; echo "#LIBERA TRANSACOES NO CORE ETHER QUE FICAM PENDENTES") | crontab -
 (crontab -l 2>/dev/null; echo "*/55  * * * * $HOME/CriptoInstallScripts/pendentes.sh") | crontab -
-(crontab -l 2>/dev/null; echo "") | crontab -
-
-
-(crontab -l 2>/dev/null; echo "#ATUALIZA OS CODIGOS DO GITHUB") | crontab -
-(crontab -l 2>/dev/null; echo "*/10  * * * * $HOME/CriptoInstallScripts/atualizar.sh") | crontab -
 (crontab -l 2>/dev/null; echo "") | crontab -

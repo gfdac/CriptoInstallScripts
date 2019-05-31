@@ -29,9 +29,9 @@ function welcome() {
 	menu3_02="INSTALAR BITCOIN"
 	menu3_03="INSTALAR ETHEREUM"
 	menu3_04="INSTALAR BITCOIN-CASH"
-	menu3_05="INSTALAR API PHP CRIPTO MOEDA"
+	menu3_05="INSTALAR API PHP CRIPTO MOEDA (INDISPONIVEL)"
 	menu3_06="INSTALAR CRONTAB"
-	menu3_07="INSTALAR EXCHANGE CLONEN exchange"
+	menu3_07="INSTALAR EXCHANGE CLONE BTH EXCHANGE (INDISPONIVEL)"
 	menu3_08="INSTALAR TODOS"
 
 	aviso_instalado="Sucesso. Reinicie o servidor ubuntu para as cripto moedas comecarem a funcionar."
@@ -327,13 +327,13 @@ function instalar() {
 		install_bitcoin_cash
 		sleep 3s
 		install_litecoin
-		sleep 3s
-		install_api_php
+		#sleep 3s
+		#install_api_php
 		sleep 3s
 		install_crontab
 		sleep 3s
-		install_exchange
-		sleep 3s
+		#install_exchange
+		#sleep 3s
 
 		echo "$aviso_instalado"
 
