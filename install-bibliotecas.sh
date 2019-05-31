@@ -13,38 +13,38 @@ DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 echo
 echo "Instalando Atualizacoes"
 sleep 3s
-sudo add-apt-repository -y ppa:ondrej/php
+# sudo add-apt-repository -y ppa:ondrej/php
 sudo apt update && sudo apt upgrade
 
 #INSTALAR APACHE2
-echo
-echo "Instalando Apache2"
-sleep 3s
-sudo apt -y install apache2
+# echo
+# echo "Instalando Apache2"
+# sleep 3s
+# sudo apt -y install apache2
 
 #salvando lista de pacotes atuais para possivel futura compatibilidade
 dpkg -l | grep php | tee ~/packages.txt
 
 #REMOVER PHP 7.X
-sudo apt purge -y php7.0* php7.0 php7.0-common
-sudo apt purge -y php7.1* php7.1 php7.1-common
-sudo apt purge -y php7.2* php7.2 php7.2-common
-sudo apt purge -y php7.3* php7.3 php7.3-common
+#sudo apt purge -y php7.0* php7.0 php7.0-common
+#sudo apt purge -y php7.1* php7.1 php7.1-common
+#sudo apt purge -y php7.2* php7.2 php7.2-common
+#sudo apt purge -y php7.3* php7.3 php7.3-common
 
 #INSTALAR PHP 7.1 E SEUS MODULOS
-echo
-echo "Instalando PHP 7.1"
-sleep 3s
-sudo add-apt-repository -y --allow-unauthenticated ppa:ondrej/php
-sudo apt update
+# echo
+# echo "Instalando PHP 7.1"
+# sleep 3s
+# sudo add-apt-repository -y --allow-unauthenticated ppa:ondrej/php
+# sudo apt update
 sudo apt-get -y --allow-unauthenticated install unzip
-sudo apt-get -y --allow-unauthenticated install mysql-server 
-sudo apt-get -y --allow-unauthenticated install php7.1 php7.1 php7.1-xml php7.1-xsl php7.1-mbstring php7.1-readline php7.1-zip php7.1-mysql php7.1-phpdbg php7.1-interbase php7.1-sybase php7.1 php7.1-sqlite3 php7.1-tidy php7.1-opcache php7.1-pspell php7.1-json php7.1-xmlrpc php7.1-curl php7.1-ldap php7.1-bz2 php7.1-cgi php7.1-imap php7.1-cli php7.1-dba php7.1-dev php7.1-intl php7.1-fpm php7.1-recode php7.1-odbc php7.1-gmp php7.1-common php7.1-pgsql php7.1-bcmath php7.1-snmp php7.1-soap php7.1-mcrypt php7.1-gd php7.1-enchant libapache2-mod-php7.1 libphp7.1-embed
-sudo apt-get -y --allow-unauthenticated install php7.1 php7.1-common php7.1-cli php7.1-fpm
-sudo apt-get -y --allow-unauthenticated install php7.1-curl php7.1-xml php7.1-zip php7.1-gd php7.1-mysql php7.1-mbstring php7.1-json php-memcached php7.1-dev php7.1-sqlite3 php7.1-bcmath php7.1-mcrypt
-sudo apt-get -y --allow-unauthenticated install php-mbstring php-gettext
-sudo apt-get -y --allow-unauthenticated install php7.1-bcmath
-sudo apt-get -y --allow-unauthenticated install libapache2-mod-php7.1 libapache2-mod-php
+# sudo apt-get -y --allow-unauthenticated install mysql-server 
+# sudo apt-get -y --allow-unauthenticated install php7.1 php7.1 php7.1-xml php7.1-xsl php7.1-mbstring php7.1-readline php7.1-zip php7.1-mysql php7.1-phpdbg php7.1-interbase php7.1-sybase php7.1 php7.1-sqlite3 php7.1-tidy php7.1-opcache php7.1-pspell php7.1-json php7.1-xmlrpc php7.1-curl php7.1-ldap php7.1-bz2 php7.1-cgi php7.1-imap php7.1-cli php7.1-dba php7.1-dev php7.1-intl php7.1-fpm php7.1-recode php7.1-odbc php7.1-gmp php7.1-common php7.1-pgsql php7.1-bcmath php7.1-snmp php7.1-soap php7.1-mcrypt php7.1-gd php7.1-enchant libapache2-mod-php7.1 libphp7.1-embed
+# sudo apt-get -y --allow-unauthenticated install php7.1 php7.1-common php7.1-cli php7.1-fpm
+# sudo apt-get -y --allow-unauthenticated install php7.1-curl php7.1-xml php7.1-zip php7.1-gd php7.1-mysql php7.1-mbstring php7.1-json php-memcached php7.1-dev php7.1-sqlite3 php7.1-bcmath php7.1-mcrypt
+# sudo apt-get -y --allow-unauthenticated install php-mbstring php-gettext
+# sudo apt-get -y --allow-unauthenticated install php7.1-bcmath
+# sudo apt-get -y --allow-unauthenticated install libapache2-mod-php7.1 libapache2-mod-php
 
 #sudo apt-get -y install phpmyadmin 
 
@@ -70,8 +70,8 @@ sudo apt-get install -y build-essential libssl-dev
 
 
 #HABILITA PHP 7.1
-sudo a2enconf php7.1
-sudo a2enmod php7.1
+# sudo a2enconf php7.1
+# sudo a2enmod php7.1
 
 #INSTALAR GO LANG 1.9
 echo
