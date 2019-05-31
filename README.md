@@ -1,10 +1,9 @@
-#PASSOS INSTALACAO SERVIDORES DO CORE DE CRIPTO MOEDAS, API E EXCHANGE
+#PASSOS INSTALACAO SERVIDORES DE CRIPTO MOEDAS
 
 #Author: Gustavo Clemente
 #gfdac.dev@gmail.com
 #Início Desenvolvimento: 01/fev/2018
 #Revisado em:            31/maio/2019
-
 
 #Servidores atualmente suportados
 #BITCOIN - BTC
@@ -18,11 +17,10 @@
 
 #DEMAIS MOEDAS EM IMPLEMENTAÇÃO.
 
-
 #Instalacao dos Scripts
 #---------------------------------------------------------------------------------------------------
-#Baixar e descompactar os scripts: https://core.exchange.com/CriptoInstallScripts.zip
-#Deixar o caminho dos scripts no padrao $HOME/CriptoInstallScripts/
+#Usuario ubuntu
+#Path /home/ubuntu
 
 #Usar os seguintes comandos para instalacao dos scripts:
 cd $HOME
@@ -52,7 +50,7 @@ cd CriptoInstallScripts
 #Configuracao do CORE Ethereum
 #Configuracao do CORE Bitcoin-Cash
 
-#4 - Instalacao da API CORE (API PHP Core Cripto Moedas)
+#4 - Instalacao da API CORE (API PHP Core Cripto Moedas) (*INDISPONIVEL*)
 #Instalacao do BD API CORE
 #Edicao Links e URLS
 #Edicao DB CONF
@@ -69,17 +67,3 @@ cd CriptoInstallScripts
 #STATUS DO SERVIDOR (VER PROCESSO/VER PORTA/GET INFO CURL SERVIDOR)
 #PARAR SERVIDOR (KILL PROCESS)
 #INICIAR SERVIDOR (SHELL CRON START)
-
-
-#7 - Instalacao da EXCHANGE (Exchange Clone exchange)
-#Instalacao do BD EXCHANGE
-#Edicao Links e URLS
-#Edicao DB CONF
-
-
-
-
-#---------------------------------------------------------------------------------------------------
-#Endereço desta documentação:
-#https://privatebin.net/?37dd75e784c42c5f#4PenLMPDGVnK8dmgP3/gDnmv1n4L2pnYippJL71S8TA=
-#senha: exchange14
